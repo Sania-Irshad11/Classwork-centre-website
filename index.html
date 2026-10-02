@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classwork Centre | Tuition Classes in Mango, Jamshedpur</title>
+
+    <meta name="description" content="Classwork Centre in Mango, Jamshedpur offers tuition and academic support for students up to 10+2 across all boards and subjects.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #123047;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #ffffff;
+            padding: 12px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-area img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .logo-text h2 {
+            color: #087fa5;
+            font-size: 22px;
+        }
+
+        .logo-text p {
+            font-size: 11px;
+            color: #555;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #123047;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #0786aa;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #eafaff, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #087fa5;
+            margin-bottom: 12px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #123047;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 28px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #0786aa;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #05647f;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 2px solid #0786aa;
+            color: #0786aa;
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            background: #0786aa;
+            color: white;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #087fa5;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .about strong {
+            color: #0786aa;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            padding: 28px 22px;
+            background: #f7fcfe;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #dceff4;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #087fa5;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* WHY US */
+        .why {
+            background: #f1fbfd;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+        }
+
+        .contact-item h3 {
+            color: #087fa5;
+            margin-bottom: 8px;
+        }
+
+        .contact-item a {
+            color: #123047;
+            text-decoration: none;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, #087fa5, #07506b);
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+        }
+
+        .cta .btn {
+            background: white;
+            color: #087fa5;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #102c3b;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 4px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            header {
+                padding: 10px 5%;
+            }
+
+            .logo-area img {
+                width: 52px;
+                height: 52px;
+            }
+
+            .logo-text h2 {
+                font-size: 17px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: 50px 18px;
+            }
+
+            .hero img {
+                width: 120px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" alt="Classwork Centre Logo">
+            <div class="logo-text">
+                <h2>Classwork Centre</h2>
+                <p>Education • Guidance • Development</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#classes">Classes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <img src="logo.png" alt="Classwork Centre">
+
+            <h1>Classwork Centre</h1>
+
+            <h2>Quality Education. Strong Foundations. Better Learning.</h2>
+
+            <p>
+                Tuition and academic support for students up to 10+2,
+                covering all boards and subjects in Mango, Jamshedpur.
+            </p>
+
+            <div class="buttons">
+                <a class="btn btn-primary"
+                   href="https://wa.me/918092187022"
+                   target="_blank">
+                    💬 WhatsApp Us
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="tel:+918092187022">
+                    📞 Call Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Classwork Centre</h2>
+            <p>Learning today for a better tomorrow.</p>
+        </div>
+
+        <div class="about">
+            <p>
+                <strong>Classwork Centre</strong> is a local tuition and
+                academic support centre located in Mango, Jamshedpur,
+                Jharkhand.
+            </p>
+
+            <br>
+
+            <p>
+                We provide academic guidance and tuition support for
+                students up to <strong>10+2</strong>, including students
+                from different boards, subjects and streams.
+            </p>
+
+            <br>
+
+            <p>
+                The centre is led by educator
+                <strong>Tauqeer Alam Ansari</strong>, with a focus on
+                understanding concepts, regular academic support and
+                helping students build strong foundations.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- CLASSES -->
+    <section id="classes">
+        <div class="section-title">
+            <h2>Classes & Academic Support</h2>
+            <p>Support for students across different academic levels.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Up to Class 10</h3>
+                <p>
+                    Academic support and tuition across subjects
+                    for school students.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>Classes 11–12</h3>
+                <p>
+                    Subject-focused tuition and academic guidance
+                    for senior secondary students.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔬</div>
+                <h3>Science Stream</h3>
+                <p>
+                    Academic support for students pursuing
+                    science subjects.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Commerce Stream</h3>
+                <p>
+                    Academic support for students pursuing
+                    commerce subjects.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>All Boards</h3>
+                <p>
+                    Tuition support for students from different
+                    school boards.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💡</div>
+                <h3>Doubt Support</h3>
+                <p>
+                    Concept clarification and academic guidance
+                    for students.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why">
+        <div class="section-title">
+            <h2>Why Choose Classwork Centre?</h2>
+            <p>A focused environment for academic growth.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">👨‍🏫</div>
+                <h3>Experienced Guidance</h3>
+                <p>
+                    Guidance from educator Tauqeer Alam Ansari.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>Concept Focused</h3>
+                <p>
+                    Focus on understanding concepts rather than
+                    simply memorising answers.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>Academic Support</h3>
+                <p>
+                    Helping students with their regular academic
+                    learning and doubts.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Strong Foundations</h3>
+                <p>
+                    Building strong academic fundamentals for
+                    continued learning.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Looking for Tuition Support?</h2>
+
+        <p>
+            Contact Classwork Centre to know more about classes,
+            subjects and admissions.
+        </p>
+
+        <a class="btn"
+           href="https://wa.me/918092187022"
+           target="_blank">
+            💬 Enquire on WhatsApp
+        </a>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Classwork Centre</h2>
+            <p>We'd be happy to hear from you.</p>
+        </div>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+                <h3>📍 Address</h3>
+                <p>
+                    House No. 16, Road Number 9,<br>
+                    Near Sabri Masjid, Baganshahi,<br>
+                    Mango, Jamshedpur,<br>
+                    Jharkhand 831012
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <p>
+                    <a href="tel:+918092187022">
+                        +91 80921 87022
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h3>🕐 Opening Hours</h3>
+                <p>
+                    Monday – Saturday<br>
+                    7:00 AM – 9:00 PM
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>Sunday: Closed</strong>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Classwork Centre</strong></p>
+        <p>To integrate life and education for development.</p>
+        <p>© 2026 Classwork Centre. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
