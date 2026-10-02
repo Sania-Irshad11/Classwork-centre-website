@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Classwork Centre in Mango, Jamshedpur. Tuition classes for all boards, Nursery to Class X all subjects, XI & XII Maths and Physics, and special computer classes.">
+<meta name="description" content="Classwork Centre, Mango, Jamshedpur — tuition classes for all boards, Nursery to Class X all subjects, XI & XII Maths and Physics, and special computer classes.">
 
-<title>Classwork Centre | Tauqeer Alam Ansari | Jamshedpur</title>
+<title>Classwork Centre | Jamshedpur</title>
 
 <style>
 *{
@@ -138,27 +138,28 @@ nav a:hover{
     color:#f5d766;
     font-size:20px;
     font-weight:bold;
-    margin-bottom:15px;
+    margin-bottom:18px;
 }
 
-.educator{
+.instructor{
     display:inline-block;
-    margin-bottom:17px;
-    padding:9px 15px;
+    margin-bottom:18px;
+    padding:9px 16px;
     background:rgba(255,255,255,.1);
     border-left:4px solid #f5c842;
     border-radius:5px;
 }
 
-.educator strong{
+.instructor strong{
     color:#fff;
     font-size:18px;
 }
 
-.educator small{
+.instructor small{
     display:block;
     color:#cbd9ef;
     font-size:12px;
+    margin-top:2px;
 }
 
 .hero-text{
@@ -253,61 +254,51 @@ section{
     background:#f5f8fc;
 }
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.card{
+.about-card{
     background:#fff;
-    padding:30px;
+    padding:35px;
     border-radius:20px;
     box-shadow:0 12px 35px rgba(7,26,61,.08);
     border:1px solid #e8edf5;
+    max-width:900px;
+    margin:auto;
 }
 
-.card h3{
+.about-card h3{
     color:#071a3d;
-    margin-bottom:12px;
-    font-size:22px;
+    margin-bottom:15px;
+    font-size:25px;
 }
 
-.card p{
+.about-card p{
     color:#667085;
+    margin-bottom:14px;
 }
 
-.educator-card{
-    margin-top:18px;
+.instructor-box{
+    margin-top:25px;
     padding:20px;
     background:linear-gradient(135deg,#071a3d,#123d8f);
     border-radius:15px;
     color:white;
 }
 
-.educator-card h4{
+.instructor-box .label{
     color:#f5c842;
-    font-size:13px;
-    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
     letter-spacing:1px;
+    text-transform:uppercase;
 }
 
-.educator-card h3{
-    color:white;
+.instructor-box h3{
+    color:#fff;
     margin:3px 0;
 }
 
-.educator-card p{
+.instructor-box p{
     color:#dbe8ff;
-}
-
-.highlight{
-    margin-top:18px;
-    padding:15px;
-    border-left:4px solid #f5c842;
-    background:#fff9df;
-    color:#344054;
-    font-weight:bold;
+    margin:0;
 }
 
 /* CLASSES */
@@ -387,6 +378,10 @@ section{
 
 /* BRANCHES */
 
+.branch-section{
+    background:#fff;
+}
+
 .branch-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -419,6 +414,11 @@ section{
 
 .branch p{
     color:#667085;
+}
+
+.map{
+    background:#e9f1ff;
+    color:#123d8f;
 }
 
 /* WHY */
@@ -545,11 +545,6 @@ section{
     color:white;
 }
 
-.map{
-    background:#e9f1ff;
-    color:#123d8f;
-}
-
 /* CTA */
 
 .cta{
@@ -624,7 +619,6 @@ footer p{
     }
 
     .hero-grid,
-    .about-grid,
     .branch-grid,
     .social-grid,
     .contact-grid{
@@ -723,21 +717,28 @@ footer p{
 <div class="container navbar">
 
 <a href="#home" class="logo-area">
+
 <img src="logo.png" alt="Classwork Centre Logo">
 
 <div>
 <h3>CLASSWORK CENTRE</h3>
 <span>Education • Growth • Development</span>
 </div>
+
 </a>
 
 <nav>
+
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#classes">Classes</a>
 <a href="#branches">Branches</a>
 <a href="#contact">Contact</a>
-<a href="tel:+918092187022" class="nav-btn">Call Now</a>
+
+<a href="tel:+918092187022" class="nav-btn">
+Call Now
+</a>
+
 </nav>
 
 </div>
@@ -752,7 +753,9 @@ footer p{
 
 <div>
 
-<span class="badge">📚 TUITION CLASSES • ALL BOARDS</span>
+<span class="badge">
+📚 TUITION CLASSES • ALL BOARDS
+</span>
 
 <h1>
 Learn Today.<br>
@@ -763,9 +766,12 @@ Learn Today.<br>
 “To integrate life and education for development”
 </div>
 
-<div class="educator">
+<div class="instructor">
+
 <strong>Tauqeer Alam Ansari</strong>
-<small>Classwork Centre</small>
+
+<small>Lead Instructor</small>
+
 </div>
 
 <p class="hero-text">
@@ -798,12 +804,15 @@ Explore Classes →
 <div class="hero-logo">
 
 <div class="logo-circle">
+
 <img src="logo.png" alt="Classwork Centre Logo">
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 
@@ -814,82 +823,52 @@ Explore Classes →
 <div class="container">
 
 <div class="section-title">
+
 <small>About Us</small>
+
 <h2>Education With Purpose</h2>
+
 <p>
-A learning environment focused on education, discipline and development.
+To integrate life and education for development.
 </p>
+
 </div>
 
-<div class="about-grid">
-
-<div class="card">
+<div class="about-card">
 
 <h3>🏫 About Classwork Centre</h3>
 
 <p>
-Classwork Centre is an educational centre in Mango, Jamshedpur,
-offering tuition classes for students across different boards
-and academic levels.
+Classwork Centre is an educational centre located in
+Mango, Jamshedpur, providing tuition and academic support
+for students across different boards and academic levels.
 </p>
-
-<p style="margin-top:15px;">
-The centre focuses on helping students understand their subjects,
-strengthen their fundamentals and develop a positive approach
-towards learning.
-</p>
-
-<div class="highlight">
-“To integrate life and education for development.”
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h3>👨‍🏫 Meet the Educator</h3>
-
-<div class="educator-card">
-
-<h4>Classwork Centre</h4>
-
-<h3>Tauqeer Alam Ansari</h3>
 
 <p>
-Dedicated to supporting students through education,
-learning and academic development.
+The centre focuses on strong fundamentals, clear concepts,
+better understanding and continuous development.
+</p>
+
+<div class="instructor-box">
+
+<div class="label">
+Lead Instructor
+</div>
+
+<h3>
+Tauqeer Alam Ansari
+</h3>
+
+<p>
+Classwork Centre
 </p>
 
 </div>
 
-<h3 style="margin-top:25px;">🎯 What We Offer</h3>
-
-<ul style="list-style:none;color:#667085;">
-
-<li style="padding:9px 0;border-bottom:1px solid #eee;">
-✓ Nursery to Class X – All Subjects
-</li>
-
-<li style="padding:9px 0;border-bottom:1px solid #eee;">
-✓ Class XI & XII – Maths & Physics
-</li>
-
-<li style="padding:9px 0;border-bottom:1px solid #eee;">
-✓ Special Computer Classes
-</li>
-
-<li style="padding:9px 0;">
-✓ Classes for Multiple Boards
-</li>
-
-</ul>
-
 </div>
 
 </div>
 
-</div>
 </section>
 
 
@@ -900,11 +879,15 @@ learning and academic development.
 <div class="container">
 
 <div class="section-title">
+
 <small>Our Classes</small>
+
 <h2>Programs For Every Stage</h2>
+
 <p>
-Academic support designed around different levels and learning needs.
+Academic support designed for different levels and learning needs.
 </p>
+
 </div>
 
 <div class="class-grid">
@@ -930,7 +913,8 @@ regular learning and academic development.
 <h3>Class XI & XII</h3>
 
 <p>
-Specialized tuition for <strong>Mathematics and Physics</strong>
+Specialized tuition for
+<strong>Mathematics and Physics</strong>
 for senior secondary students.
 </p>
 
@@ -953,6 +937,7 @@ useful computer knowledge and skills.
 </div>
 
 </div>
+
 </section>
 
 
@@ -969,7 +954,7 @@ useful computer knowledge and skills.
 <h2>Tuition For Multiple Boards</h2>
 
 <p>
-Classwork Centre welcomes students from different educational boards.
+Classes available for students from different educational boards.
 </p>
 
 </div>
@@ -985,12 +970,13 @@ Classwork Centre welcomes students from different educational boards.
 </div>
 
 </div>
+
 </section>
 
 
 <!-- BRANCHES -->
 
-<section id="branches">
+<section class="branch-section" id="branches">
 
 <div class="container">
 
@@ -1001,7 +987,7 @@ Classwork Centre welcomes students from different educational boards.
 <h2>Visit Our Branches</h2>
 
 <p>
-Convenient learning locations in Mango, Jamshedpur.
+Learning locations in Mango, Jamshedpur.
 </p>
 
 </div>
@@ -1010,14 +996,18 @@ Convenient learning locations in Mango, Jamshedpur.
 
 <div class="branch">
 
-<div class="branch-number">01</div>
+<div class="branch-number">
+01
+</div>
 
-<h3>Main Branch</h3>
+<h3>
+Main Branch
+</h3>
 
 <p>
 <strong>Road No. 09, House No. 16</strong><br>
 Baganshahi, Near Sabri Masjid<br>
-Mango, Jamshedpur, Jharkhand
+Mango, Jamshedpur, Jharkhand 831012
 </p>
 
 <br>
@@ -1026,7 +1016,9 @@ Mango, Jamshedpur, Jharkhand
 href="https://www.google.com/maps/search/?api=1&query=House+No+16+Road+No+9+Baganshahi+Near+Sabri+Masjid+Mango+Jamshedpur"
 target="_blank"
 class="btn map">
+
 📍 Open in Google Maps
+
 </a>
 
 </div>
@@ -1034,9 +1026,13 @@ class="btn map">
 
 <div class="branch">
 
-<div class="branch-number">02</div>
+<div class="branch-number">
+02
+</div>
 
-<h3>2nd Branch</h3>
+<h3>
+2nd Branch
+</h3>
 
 <p>
 <strong>Road No. 13, Jawahar Nagar</strong><br>
@@ -1045,7 +1041,10 @@ Jamshedpur, Jharkhand
 </p>
 
 <p style="margin-top:12px;">
-<strong>Junior Section:</strong> Nursery to Class VII
+
+<strong>Junior Section:</strong>
+Nursery to Class VII
+
 </p>
 
 <br>
@@ -1054,7 +1053,9 @@ Jamshedpur, Jharkhand
 href="https://www.google.com/maps/search/?api=1&query=Road+No+13+Jawahar+Nagar+Near+Belal+Masjid+Mango+Jamshedpur"
 target="_blank"
 class="btn map">
+
 📍 Open in Google Maps
+
 </a>
 
 </div>
@@ -1062,6 +1063,7 @@ class="btn map">
 </div>
 
 </div>
+
 </section>
 
 
@@ -1086,32 +1088,60 @@ Our focus goes beyond completing the syllabus.
 <div class="why-grid">
 
 <div class="why-card">
+
 <div class="icon">🎓</div>
+
 <h3>Strong Foundations</h3>
-<p>Build clear concepts from the basics.</p>
+
+<p>
+Build clear concepts from the basics.
+</p>
+
 </div>
 
+
 <div class="why-card">
+
 <div class="icon">📖</div>
+
 <h3>Academic Support</h3>
-<p>Structured support for students.</p>
+
+<p>
+Structured support for students.
+</p>
+
 </div>
 
+
 <div class="why-card">
+
 <div class="icon">💡</div>
+
 <h3>Conceptual Learning</h3>
-<p>Focus on understanding, not memorising.</p>
+
+<p>
+Focus on understanding, not memorising.
+</p>
+
 </div>
+
 
 <div class="why-card">
+
 <div class="icon">🌱</div>
+
 <h3>Overall Development</h3>
-<p>Learning with growth and development.</p>
-</div>
+
+<p>
+Learning with growth and development.
+</p>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 
@@ -1140,15 +1170,17 @@ Stay updated with Classwork Centre activities and educational content.
 <h3>📸 Instagram</h3>
 
 <p>
-Follow <strong>@classwork_centre</strong> for updates,
-student activities and centre news.
+Follow <strong>@classwork_centre</strong>
+for updates and centre activities.
 </p>
 
 <a
 href="https://www.instagram.com/classwork_centre/"
 target="_blank"
 class="social-btn">
+
 Follow on Instagram →
+
 </a>
 
 </div>
@@ -1159,7 +1191,7 @@ Follow on Instagram →
 <h3>▶️ YouTube</h3>
 
 <p>
-Visit the official Classwork Centre YouTube channel
+Visit the Classwork Centre YouTube channel
 for educational content.
 </p>
 
@@ -1167,7 +1199,9 @@ for educational content.
 href="https://www.youtube.com/@classworkcentre"
 target="_blank"
 class="social-btn">
+
 Visit YouTube →
+
 </a>
 
 </div>
@@ -1175,6 +1209,7 @@ Visit YouTube →
 </div>
 
 </div>
+
 </section>
 
 
@@ -1205,31 +1240,54 @@ Have a question about classes? Get in touch with us.
 </h3>
 
 <div class="contact-item">
-<strong>Educator</strong>
-<p>Tauqeer Alam Ansari</p>
+
+<strong>Lead Instructor</strong>
+
+<p>
+Tauqeer Alam Ansari
+</p>
+
 </div>
 
+
 <div class="contact-item">
+
 <strong>Phone</strong>
-<p>8092187022</p>
+
+<p>
+8092187022
+</p>
+
 </div>
 
+
 <div class="contact-item">
+
 <strong>Location</strong>
-<p>Mango, Jamshedpur, Jharkhand</p>
+
+<p>
+Mango, Jamshedpur, Jharkhand
+</p>
+
 </div>
+
 
 <div class="contact-buttons">
 
-<a href="tel:+918092187022" class="btn call">
+<a href="tel:+918092187022"
+class="btn call">
+
 📞 Call Now
+
 </a>
 
 <a
 href="https://wa.me/918092187022"
 target="_blank"
 class="btn whatsapp">
+
 💬 WhatsApp
+
 </a>
 
 </div>
@@ -1245,9 +1303,13 @@ class="btn whatsapp">
 
 <p style="color:#667085;">
 
-<strong>House No. 16, Road No. 09</strong><br>
+<strong>
+House No. 16, Road No. 09
+</strong><br>
+
 Baganshahi, Near Sabri Masjid<br>
-Mango, Jamshedpur, Jharkhand
+
+Mango, Jamshedpur, Jharkhand 831012
 
 </p>
 
@@ -1257,7 +1319,9 @@ Mango, Jamshedpur, Jharkhand
 href="https://www.google.com/maps/search/?api=1&query=House+No+16+Road+No+9+Baganshahi+Near+Sabri+Masjid+Mango+Jamshedpur"
 target="_blank"
 class="btn map">
+
 📍 Get Directions
+
 </a>
 
 </div>
@@ -1265,6 +1329,7 @@ class="btn map">
 </div>
 
 </div>
+
 </section>
 
 
@@ -1274,7 +1339,9 @@ class="btn map">
 
 <div class="container">
 
-<h2>Ready To Begin Your Learning Journey?</h2>
+<h2>
+Ready To Begin Your Learning Journey?
+</h2>
 
 <p>
 Connect with Classwork Centre for tuition and academic support.
@@ -1282,15 +1349,21 @@ Connect with Classwork Centre for tuition and academic support.
 
 <div class="buttons" style="justify-content:center;">
 
-<a href="tel:+918092187022" class="btn primary">
+<a
+href="tel:+918092187022"
+class="btn primary">
+
 📞 Call 8092187022
+
 </a>
 
 <a
 href="https://wa.me/918092187022"
 target="_blank"
 class="btn secondary">
+
 💬 WhatsApp Us
+
 </a>
 
 </div>
@@ -1310,14 +1383,17 @@ class="btn secondary">
 
 <div>
 
-<h3>CLASSWORK CENTRE</h3>
+<h3>
+CLASSWORK CENTRE
+</h3>
 
 <p>
 “To integrate life and education for development.”
 </p>
 
 <p>
-Educator: <strong>Tauqeer Alam Ansari</strong>
+<strong>Lead Instructor:</strong>
+Tauqeer Alam Ansari
 </p>
 
 <p>
@@ -1329,7 +1405,9 @@ Mango, Jamshedpur, Jharkhand
 
 <div class="footer-links">
 
-<h3>Quick Links</h3>
+<h3>
+Quick Links
+</h3>
 
 <a href="#home">Home</a>
 <a href="#about">About</a>
@@ -1342,7 +1420,9 @@ Mango, Jamshedpur, Jharkhand
 
 <div class="footer-links">
 
-<h3>Connect</h3>
+<h3>
+Connect
+</h3>
 
 <a
 href="https://www.instagram.com/classwork_centre/"
@@ -1364,8 +1444,11 @@ YouTube
 
 </div>
 
+
 <div class="copyright">
+
 © 2026 Classwork Centre. All Rights Reserved.
+
 </div>
 
 </div>
