@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Classwork Centre, Mango, Jamshedpur - Tuition classes for all boards. Nursery to Class X all subjects, XI & XII Maths and Physics, and special computer classes.">
+<meta name="description" content="Classwork Centre in Mango, Jamshedpur. Tuition classes for all boards, Nursery to Class X all subjects, XI & XII Maths and Physics, and special computer classes.">
 
-<title>Classwork Centre | Jamshedpur</title>
+<title>Classwork Centre | Tauqeer Alam Ansari | Jamshedpur</title>
 
 <style>
 *{
@@ -17,10 +17,10 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     color:#17213a;
-    background:#ffffff;
     line-height:1.6;
+    background:#fff;
 }
 
 a{
@@ -33,14 +33,14 @@ a{
     margin:auto;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
     z-index:1000;
     background:#071a3d;
-    box-shadow:0 4px 20px rgba(0,0,0,.15);
+    box-shadow:0 4px 20px rgba(0,0,0,.18);
 }
 
 .navbar{
@@ -48,22 +48,21 @@ header{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:20px;
 }
 
 .logo-area{
     display:flex;
     align-items:center;
     gap:12px;
-    color:white;
+    color:#fff;
 }
 
 .logo-area img{
     width:52px;
     height:52px;
     border-radius:50%;
-    background:white;
     object-fit:contain;
+    background:#fff;
 }
 
 .logo-area h3{
@@ -71,22 +70,20 @@ header{
 }
 
 .logo-area span{
-    display:block;
     color:#f5c842;
     font-size:11px;
-    font-weight:normal;
 }
 
 nav{
     display:flex;
+    gap:24px;
     align-items:center;
-    gap:25px;
 }
 
 nav a{
-    color:white;
-    font-weight:bold;
+    color:#fff;
     font-size:14px;
+    font-weight:bold;
 }
 
 nav a:hover{
@@ -95,24 +92,24 @@ nav a:hover{
 
 .nav-btn{
     background:#f5c842;
-    color:#071a3d !important;
+    color:#071a3d!important;
     padding:10px 17px;
     border-radius:25px;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
     background:
-    radial-gradient(circle at 85% 20%,rgba(47,128,237,.3),transparent 30%),
+    radial-gradient(circle at 85% 20%,rgba(47,128,237,.35),transparent 30%),
     linear-gradient(135deg,#061735,#0c2e68,#15579c);
-    color:white;
-    padding:90px 0;
+    color:#fff;
+    padding:85px 0;
 }
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1.2fr .8fr;
+    grid-template-columns:1.15fr .85fr;
     align-items:center;
     gap:50px;
 }
@@ -128,7 +125,7 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:clamp(42px,6vw,75px);
+    font-size:clamp(42px,6vw,72px);
     line-height:1;
     margin-bottom:20px;
 }
@@ -142,6 +139,26 @@ nav a:hover{
     font-size:20px;
     font-weight:bold;
     margin-bottom:15px;
+}
+
+.educator{
+    display:inline-block;
+    margin-bottom:17px;
+    padding:9px 15px;
+    background:rgba(255,255,255,.1);
+    border-left:4px solid #f5c842;
+    border-radius:5px;
+}
+
+.educator strong{
+    color:#fff;
+    font-size:18px;
+}
+
+.educator small{
+    display:block;
+    color:#cbd9ef;
+    font-size:12px;
 }
 
 .hero-text{
@@ -176,7 +193,7 @@ nav a:hover{
 
 .secondary{
     border:1px solid rgba(255,255,255,.5);
-    color:white;
+    color:#fff;
 }
 
 .hero-logo{
@@ -187,11 +204,12 @@ nav a:hover{
 .logo-circle{
     width:320px;
     height:320px;
-    background:white;
+    background:#fff;
     border:9px solid #f5c842;
     border-radius:50%;
     padding:20px;
     box-shadow:0 25px 60px rgba(0,0,0,.3);
+    overflow:hidden;
 }
 
 .logo-circle img{
@@ -200,7 +218,7 @@ nav a:hover{
     object-fit:contain;
 }
 
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 
 section{
     padding:80px 0;
@@ -229,7 +247,7 @@ section{
     color:#667085;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
 
 .about{
     background:#f5f8fc;
@@ -242,7 +260,7 @@ section{
 }
 
 .card{
-    background:white;
+    background:#fff;
     padding:30px;
     border-radius:20px;
     box-shadow:0 12px 35px rgba(7,26,61,.08);
@@ -259,6 +277,30 @@ section{
     color:#667085;
 }
 
+.educator-card{
+    margin-top:18px;
+    padding:20px;
+    background:linear-gradient(135deg,#071a3d,#123d8f);
+    border-radius:15px;
+    color:white;
+}
+
+.educator-card h4{
+    color:#f5c842;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.educator-card h3{
+    color:white;
+    margin:3px 0;
+}
+
+.educator-card p{
+    color:#dbe8ff;
+}
+
 .highlight{
     margin-top:18px;
     padding:15px;
@@ -268,7 +310,7 @@ section{
     font-weight:bold;
 }
 
-/* ================= CLASSES ================= */
+/* CLASSES */
 
 .class-grid{
     display:grid;
@@ -282,7 +324,7 @@ section{
     border:1px solid #e5eaf2;
     box-shadow:0 12px 35px rgba(7,26,61,.08);
     transition:.25s;
-    background:white;
+    background:#fff;
 }
 
 .class-card:hover{
@@ -309,7 +351,7 @@ section{
     color:#667085;
 }
 
-/* ================= BOARDS ================= */
+/* BOARDS */
 
 .boards{
     background:linear-gradient(135deg,#071a3d,#123f8f);
@@ -343,7 +385,7 @@ section{
     font-weight:bold;
 }
 
-/* ================= BRANCHES ================= */
+/* BRANCHES */
 
 .branch-grid{
     display:grid;
@@ -379,7 +421,7 @@ section{
     color:#667085;
 }
 
-/* ================= WHY US ================= */
+/* WHY */
 
 .why{
     background:#f5f8fc;
@@ -414,11 +456,7 @@ section{
     margin-top:7px;
 }
 
-/* ================= SOCIAL ================= */
-
-.social{
-    background:white;
-}
+/* SOCIAL */
 
 .social-grid{
     display:grid;
@@ -447,19 +485,18 @@ section{
 
 .social-card p{
     margin-bottom:20px;
-    opacity:.95;
 }
 
 .social-btn{
     display:inline-block;
-    background:white;
+    background:#fff;
     color:#17213a;
     padding:11px 18px;
     border-radius:8px;
     font-weight:bold;
 }
 
-/* ================= CONTACT ================= */
+/* CONTACT */
 
 .contact{
     background:#f5f8fc;
@@ -472,7 +509,7 @@ section{
 }
 
 .contact-card{
-    background:white;
+    background:#fff;
     padding:32px;
     border-radius:20px;
     border:1px solid #e5eaf2;
@@ -482,14 +519,9 @@ section{
     margin-bottom:22px;
 }
 
-.contact-item:last-child{
-    margin-bottom:0;
-}
-
 .contact-item strong{
     display:block;
     color:#071a3d;
-    margin-bottom:4px;
 }
 
 .contact-item p{
@@ -518,7 +550,7 @@ section{
     color:#123d8f;
 }
 
-/* ================= CTA ================= */
+/* CTA */
 
 .cta{
     padding:70px 0;
@@ -537,7 +569,7 @@ section{
     margin-bottom:25px;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
     background:#06142f;
@@ -552,7 +584,7 @@ footer{
 }
 
 footer h3{
-    color:white;
+    color:#fff;
     margin-bottom:10px;
 }
 
@@ -564,6 +596,7 @@ footer p{
 .footer-links a{
     display:block;
     margin:7px 0;
+    color:#c9d5e8;
 }
 
 .footer-links a:hover{
@@ -578,7 +611,7 @@ footer p{
     font-size:13px;
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:850px){
 
@@ -602,7 +635,7 @@ footer p{
         text-align:center;
     }
 
-    .hero-copy{
+    .hero-text{
         margin-left:auto;
         margin-right:auto;
     }
@@ -639,10 +672,6 @@ footer p{
 }
 
 @media(max-width:500px){
-
-    .navbar{
-        min-height:65px;
-    }
 
     .logo-area img{
         width:43px;
@@ -688,13 +717,14 @@ footer p{
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
 <div class="container navbar">
 
 <a href="#home" class="logo-area">
 <img src="logo.png" alt="Classwork Centre Logo">
+
 <div>
 <h3>CLASSWORK CENTRE</h3>
 <span>Education • Growth • Development</span>
@@ -714,9 +744,10 @@ footer p{
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
+
 <div class="container hero-grid">
 
 <div>
@@ -732,6 +763,11 @@ Learn Today.<br>
 “To integrate life and education for development”
 </div>
 
+<div class="educator">
+<strong>Tauqeer Alam Ansari</strong>
+<small>Classwork Centre</small>
+</div>
+
 <p class="hero-text">
 Classwork Centre provides dedicated tuition and academic support
 for students with a focus on strong foundations, better understanding
@@ -739,28 +775,39 @@ and continuous development.
 </p>
 
 <div class="buttons">
-<a href="tel:+918092187022" class="btn primary">📞 Call Us</a>
 
-<a href="https://wa.me/918092187022" class="btn secondary" target="_blank">
+<a href="tel:+918092187022" class="btn primary">
+📞 Call Us
+</a>
+
+<a href="https://wa.me/918092187022"
+target="_blank"
+class="btn secondary">
 💬 WhatsApp
 </a>
 
-<a href="#classes" class="btn secondary">Explore Classes →</a>
+<a href="#classes" class="btn secondary">
+Explore Classes →
+</a>
+
 </div>
 
 </div>
+
 
 <div class="hero-logo">
+
 <div class="logo-circle">
-<img src="logo.png" alt="Classwork Centre">
+<img src="logo.png" alt="Classwork Centre Logo">
 </div>
+
 </div>
 
 </div>
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -777,16 +824,17 @@ A learning environment focused on education, discipline and development.
 <div class="about-grid">
 
 <div class="card">
+
 <h3>🏫 About Classwork Centre</h3>
 
 <p>
 Classwork Centre is an educational centre in Mango, Jamshedpur,
-offering tuition classes for students across different boards and
-academic levels.
+offering tuition classes for students across different boards
+and academic levels.
 </p>
 
 <p style="margin-top:15px;">
-Our aim is to help students understand their subjects clearly,
+The centre focuses on helping students understand their subjects,
 strengthen their fundamentals and develop a positive approach
 towards learning.
 </p>
@@ -794,28 +842,44 @@ towards learning.
 <div class="highlight">
 “To integrate life and education for development.”
 </div>
+
 </div>
 
 
 <div class="card">
 
-<h3>🎯 What We Offer</h3>
+<h3>👨‍🏫 Meet the Educator</h3>
+
+<div class="educator-card">
+
+<h4>Classwork Centre</h4>
+
+<h3>Tauqeer Alam Ansari</h3>
+
+<p>
+Dedicated to supporting students through education,
+learning and academic development.
+</p>
+
+</div>
+
+<h3 style="margin-top:25px;">🎯 What We Offer</h3>
 
 <ul style="list-style:none;color:#667085;">
 
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:9px 0;border-bottom:1px solid #eee;">
 ✓ Nursery to Class X – All Subjects
 </li>
 
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:9px 0;border-bottom:1px solid #eee;">
 ✓ Class XI & XII – Maths & Physics
 </li>
 
-<li style="padding:10px 0;border-bottom:1px solid #eee;">
+<li style="padding:9px 0;border-bottom:1px solid #eee;">
 ✓ Special Computer Classes
 </li>
 
-<li style="padding:10px 0;">
+<li style="padding:9px 0;">
 ✓ Classes for Multiple Boards
 </li>
 
@@ -829,7 +893,7 @@ towards learning.
 </section>
 
 
-<!-- ================= CLASSES ================= -->
+<!-- CLASSES -->
 
 <section id="classes">
 
@@ -839,10 +903,9 @@ towards learning.
 <small>Our Classes</small>
 <h2>Programs For Every Stage</h2>
 <p>
-Choose the academic support that matches your class and learning needs.
+Academic support designed around different levels and learning needs.
 </p>
 </div>
-
 
 <div class="class-grid">
 
@@ -878,11 +941,11 @@ for senior secondary students.
 
 <div class="icon">💻</div>
 
-<h3>Computer Classes</h3>
+<h3>Special Computer Classes</h3>
 
 <p>
-Special computer classes designed to help students
-develop useful computer knowledge and skills.
+Computer classes designed to help students develop
+useful computer knowledge and skills.
 </p>
 
 </div>
@@ -893,7 +956,7 @@ develop useful computer knowledge and skills.
 </section>
 
 
-<!-- ================= BOARDS ================= -->
+<!-- BOARDS -->
 
 <section class="boards">
 
@@ -925,7 +988,7 @@ Classwork Centre welcomes students from different educational boards.
 </section>
 
 
-<!-- ================= BRANCHES ================= -->
+<!-- BRANCHES -->
 
 <section id="branches">
 
@@ -942,7 +1005,6 @@ Convenient learning locations in Mango, Jamshedpur.
 </p>
 
 </div>
-
 
 <div class="branch-grid">
 
@@ -1003,7 +1065,7 @@ class="btn map">
 </section>
 
 
-<!-- ================= WHY US ================= -->
+<!-- WHY -->
 
 <section class="why">
 
@@ -1021,58 +1083,30 @@ Our focus goes beyond completing the syllabus.
 
 </div>
 
-
 <div class="why-grid">
 
 <div class="why-card">
-
 <div class="icon">🎓</div>
-
 <h3>Strong Foundations</h3>
-
-<p>
-Build clear concepts from the basics.
-</p>
-
+<p>Build clear concepts from the basics.</p>
 </div>
 
-
 <div class="why-card">
-
 <div class="icon">📖</div>
-
 <h3>Academic Support</h3>
-
-<p>
-Structured support for students.
-</p>
-
+<p>Structured support for students.</p>
 </div>
 
-
 <div class="why-card">
-
 <div class="icon">💡</div>
-
 <h3>Conceptual Learning</h3>
-
-<p>
-Focus on understanding, not memorising.
-</p>
-
+<p>Focus on understanding, not memorising.</p>
 </div>
 
-
 <div class="why-card">
-
 <div class="icon">🌱</div>
-
 <h3>Overall Development</h3>
-
-<p>
-Learning with growth and development.
-</p>
-
+<p>Learning with growth and development.</p>
 </div>
 
 </div>
@@ -1081,9 +1115,9 @@ Learning with growth and development.
 </section>
 
 
-<!-- ================= SOCIAL ================= -->
+<!-- SOCIAL -->
 
-<section class="social">
+<section>
 
 <div class="container">
 
@@ -1098,7 +1132,6 @@ Stay updated with Classwork Centre activities and educational content.
 </p>
 
 </div>
-
 
 <div class="social-grid">
 
@@ -1126,8 +1159,8 @@ Follow on Instagram →
 <h3>▶️ YouTube</h3>
 
 <p>
-Watch educational and Classwork Centre content on our
-official YouTube channel.
+Visit the official Classwork Centre YouTube channel
+for educational content.
 </p>
 
 <a
@@ -1145,7 +1178,7 @@ Visit YouTube →
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -1158,11 +1191,10 @@ Visit YouTube →
 <h2>Contact Classwork Centre</h2>
 
 <p>
-Have a question about classes or admissions? Get in touch with us.
+Have a question about classes? Get in touch with us.
 </p>
 
 </div>
-
 
 <div class="contact-grid">
 
@@ -1173,37 +1205,19 @@ Have a question about classes or admissions? Get in touch with us.
 </h3>
 
 <div class="contact-item">
+<strong>Educator</strong>
+<p>Tauqeer Alam Ansari</p>
+</div>
 
+<div class="contact-item">
 <strong>Phone</strong>
-
 <p>8092187022</p>
-
 </div>
 
-
 <div class="contact-item">
-
 <strong>Location</strong>
-
-<p>
-Mango, Jamshedpur, Jharkhand
-</p>
-
+<p>Mango, Jamshedpur, Jharkhand</p>
 </div>
-
-
-<div class="contact-item">
-
-<strong>Classes</strong>
-
-<p>
-Nursery to Class X – All Subjects<br>
-XI & XII – Maths & Physics<br>
-Special Computer Classes
-</p>
-
-</div>
-
 
 <div class="contact-buttons">
 
@@ -1254,7 +1268,7 @@ class="btn map">
 </section>
 
 
-<!-- ================= CTA ================= -->
+<!-- CTA -->
 
 <section class="cta">
 
@@ -1286,7 +1300,7 @@ class="btn secondary">
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1300,6 +1314,10 @@ class="btn secondary">
 
 <p>
 “To integrate life and education for development.”
+</p>
+
+<p>
+Educator: <strong>Tauqeer Alam Ansari</strong>
 </p>
 
 <p>
@@ -1345,7 +1363,6 @@ YouTube
 </div>
 
 </div>
-
 
 <div class="copyright">
 © 2026 Classwork Centre. All Rights Reserved.
