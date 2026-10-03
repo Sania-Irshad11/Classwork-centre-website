@@ -332,12 +332,23 @@ section{
 }
 
 .class-card{
+    position:relative;
     padding:30px;
     border-radius:20px;
-    border:1px solid #e5eaf2;
-    box-shadow:0 12px 35px rgba(7,26,61,.08);
-    transition:.25s;
+    border:1px solid #dce8f7;
+    box-shadow:
+        0 10px 30px rgba(21,87,156,.08),
+        0 0 0 rgba(47,128,237,0);
+    transition:.3s ease;
     background:#fff;
+}
+
+.class-card:hover{
+    transform:translateY(-7px);
+    border-color:#4da3ff;
+    box-shadow:
+        0 15px 35px rgba(21,87,156,.15),
+        0 0 20px rgba(47,128,237,.25);
 }
 
 .class-card:hover{
