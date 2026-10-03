@@ -13,6 +13,10 @@
 
 <style>
 
+/* =========================
+   RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
@@ -42,7 +46,10 @@ a{
     margin:auto;
 }
 
-/* ================= HEADER ================= */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
     position:sticky;
@@ -107,7 +114,10 @@ nav a:hover{
     border-radius:25px;
 }
 
-/* ================= HERO ================= */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
     background:
@@ -212,7 +222,10 @@ nav a:hover{
     justify-content:center;
 }
 
-/* ================= MAIN LOGO ================= */
+
+/* =========================
+   MAIN LOGO CIRCLE
+========================= */
 
 .logo-circle{
     width:240px !important;
@@ -237,7 +250,10 @@ nav a:hover{
     clip-path:circle(50%);
 }
 
-/* ================= SECTIONS ================= */
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
     padding:80px 0;
@@ -266,7 +282,10 @@ section{
     color:#667085;
 }
 
-/* ================= ABOUT ================= */
+
+/* =========================
+   ABOUT
+========================= */
 
 .about{
     background:#f5f8fc;
@@ -323,7 +342,7 @@ section{
 }
 
 .instructor-box h3{
-    color:#fff;
+    color:#fff !important;
     margin:3px 0;
 }
 
@@ -332,7 +351,10 @@ section{
     margin:0;
 }
 
-/* ================= CLASSES ================= */
+
+/* =========================
+   CLASSES
+========================= */
 
 .class-grid{
     display:grid;
@@ -385,7 +407,10 @@ section{
     color:#667085;
 }
 
-/* ================= BOARDS ================= */
+
+/* =========================
+   BOARDS
+========================= */
 
 .boards{
     background:linear-gradient(135deg,#071a3d,#123f8f);
@@ -393,7 +418,7 @@ section{
 }
 
 .boards .section-title h2{
-    color:white;
+    color:#fff !important;
 }
 
 .boards .section-title small{
@@ -401,7 +426,7 @@ section{
 }
 
 .boards .section-title p{
-    color:#dbe8ff;
+    color:#dbe8ff !important;
 }
 
 .board-list{
@@ -419,7 +444,10 @@ section{
     font-weight:bold;
 }
 
-/* ================= BRANCHES ================= */
+
+/* =========================
+   BRANCHES
+========================= */
 
 .branch-section{
     background:#fff;
@@ -464,7 +492,10 @@ section{
     color:#123d8f;
 }
 
-/* ================= WHY ================= */
+
+/* =========================
+   WHY
+========================= */
 
 .why{
     background:#f5f8fc;
@@ -515,7 +546,10 @@ section{
     margin-top:7px;
 }
 
-/* ================= SOCIAL ================= */
+
+/* =========================
+   SOCIAL
+========================= */
 
 .social-grid{
     display:grid;
@@ -555,7 +589,10 @@ section{
     font-weight:bold;
 }
 
-/* ================= CONTACT ================= */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
     background:#f5f8fc;
@@ -604,7 +641,10 @@ section{
     color:white;
 }
 
-/* ================= CTA ================= */
+
+/* =========================
+   CTA
+========================= */
 
 .cta{
     padding:70px 0;
@@ -623,7 +663,10 @@ section{
     margin-bottom:25px;
 }
 
-/* ================= FOOTER ================= */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#06142f;
@@ -665,9 +708,10 @@ footer p{
     font-size:13px;
 }
 
-/* =====================================================
-   MOBILE — MORE LIKE A REAL WEBSITE
-   ===================================================== */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:850px){
 
@@ -678,8 +722,6 @@ footer p{
     .container{
         width:92%;
     }
-
-    /* HERO */
 
     .hero{
         padding:48px 0 55px;
@@ -740,8 +782,6 @@ footer p{
         font-size:14px;
     }
 
-    /* SECTIONS */
-
     section{
         padding:58px 0;
     }
@@ -766,8 +806,6 @@ footer p{
         line-height:1.5;
     }
 
-    /* ABOUT */
-
     .about-card{
         padding:25px 22px;
         border-radius:17px;
@@ -784,8 +822,6 @@ footer p{
     .instructor-box{
         padding:18px;
     }
-
-    /* CLASSES */
 
     .class-grid{
         grid-template-columns:1fr;
@@ -813,8 +849,6 @@ footer p{
         font-size:14px;
     }
 
-    /* BOARDS */
-
     .board-list{
         gap:10px;
     }
@@ -823,8 +857,6 @@ footer p{
         padding:10px 18px;
         font-size:13px;
     }
-
-    /* BRANCHES */
 
     .branch-grid{
         grid-template-columns:1fr;
@@ -851,8 +883,6 @@ footer p{
         font-size:14px;
     }
 
-    /* WHY */
-
     .why-grid{
         grid-template-columns:1fr 1fr;
         gap:12px;
@@ -878,8 +908,6 @@ footer p{
         line-height:1.45;
     }
 
-    /* SOCIAL */
-
     .social-grid{
         grid-template-columns:1fr;
         gap:15px;
@@ -897,8 +925,6 @@ footer p{
     .social-card p{
         font-size:14px;
     }
-
-    /* CONTACT */
 
     .contact-grid{
         grid-template-columns:1fr;
@@ -926,8 +952,6 @@ footer p{
         margin-top:20px;
     }
 
-    /* CTA */
-
     .cta{
         padding:55px 0;
     }
@@ -940,8 +964,6 @@ footer p{
     .cta p{
         font-size:14px;
     }
-
-    /* FOOTER */
 
     footer{
         padding:30px 0 18px;
@@ -962,10 +984,12 @@ footer p{
         padding-top:15px;
         font-size:12px;
     }
-
 }
 
-/* ================= SMALL PHONES ================= */
+
+/* =========================
+   SMALL PHONES
+========================= */
 
 @media(max-width:500px){
 
@@ -1059,10 +1083,12 @@ footer p{
     .cta .buttons .btn{
         width:100%;
     }
-
 }
 
-/* ================= FORCE LIGHT MODE ================= */
+
+/* =========================
+   FORCE LIGHT MODE
+========================= */
 
 @media (prefers-color-scheme: dark){
 
@@ -1114,6 +1140,9 @@ footer p{
         color:#667085 !important;
     }
 
+    /* Dark blue sections stay dark,
+       but their headings remain white */
+
     .hero,
     .boards,
     .cta,
@@ -1121,16 +1150,40 @@ footer p{
         color:#fff !important;
     }
 
+    .boards .section-title h2{
+        color:#fff !important;
+    }
+
+    .boards .section-title p{
+        color:#dbe8ff !important;
+    }
+
+    .instructor-box{
+        color:#fff !important;
+    }
+
+    .instructor-box h3{
+        color:#fff !important;
+    }
+
+    .instructor-box p{
+        color:#dbe8ff !important;
+    }
 }
 
 </style>
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
+
 <div class="container navbar">
 
 <a href="#home" class="logo-area">
@@ -1144,20 +1197,30 @@ footer p{
 
 </a>
 
+
 <nav>
+
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#classes">Classes</a>
 <a href="#branches">Branches</a>
 <a href="#contact">Contact</a>
-<a href="tel:+918092187022" class="nav-btn">Call Now</a>
+
+<a href="tel:+918092187022" class="nav-btn">
+Call Now
+</a>
+
 </nav>
 
 </div>
+
 </header>
 
 
-<!-- ================= HERO ================= -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
@@ -1165,7 +1228,9 @@ footer p{
 
 <div>
 
-<span class="badge">📚 TUITION CLASSES • ALL BOARDS</span>
+<span class="badge">
+📚 TUITION CLASSES • ALL BOARDS
+</span>
 
 <h1>
 Learn Today.<br>
@@ -1177,14 +1242,23 @@ Learn Today.<br>
 </div>
 
 <div class="instructor">
-<strong>Tauqeer Alam Ansari</strong>
-<small>Director</small>
+
+<strong>
+Tauqeer Alam Ansari
+</strong>
+
+<small>
+Director
+</small>
+
 </div>
 
 <p class="hero-text">
+
 Classwork Centre provides dedicated tuition and academic support
 for students with a focus on strong foundations, better understanding
 and continuous development.
+
 </p>
 
 <div class="buttons">
@@ -1193,7 +1267,9 @@ and continuous development.
 📞 Call Us
 </a>
 
-<a href="https://wa.me/918092187022" target="_blank" class="btn secondary">
+<a href="https://wa.me/918092187022"
+target="_blank"
+class="btn secondary">
 💬 WhatsApp
 </a>
 
@@ -1205,10 +1281,14 @@ Explore Classes →
 
 </div>
 
+
 <div class="hero-logo">
 
 <div class="logo-circle">
-<img src="logo.png" alt="Classwork Centre Logo">
+
+<img src="logo.png"
+alt="Classwork Centre Logo">
+
 </div>
 
 </div>
@@ -1218,7 +1298,10 @@ Explore Classes →
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="about" id="about">
 
@@ -1226,9 +1309,13 @@ Explore Classes →
 
 <div class="section-title">
 
-<small>About Us</small>
+<small>
+About Us
+</small>
 
-<h2>Education With Purpose</h2>
+<h2>
+Education With Purpose
+</h2>
 
 <p>
 To integrate life and education for development.
@@ -1243,18 +1330,25 @@ To integrate life and education for development.
 ESTABLISHED • 2012
 </div>
 
-<h3>🏫 About Classwork Centre</h3>
+<h3>
+🏫 About Classwork Centre
+</h3>
 
 <p>
+
 Classwork Centre is an educational centre located in
 Mango, Jamshedpur, providing tuition and academic support
 for students across different boards and academic levels.
+
 </p>
 
 <p>
+
 The centre focuses on strong fundamentals, clear concepts,
 better understanding and continuous development.
+
 </p>
+
 
 <div class="instructor-box">
 
@@ -1279,7 +1373,10 @@ Classwork Centre
 </section>
 
 
-<!-- ================= CLASSES ================= -->
+
+<!-- =========================
+     CLASSES
+========================= -->
 
 <section id="classes">
 
@@ -1287,9 +1384,13 @@ Classwork Centre
 
 <div class="section-title">
 
-<small>Our Classes</small>
+<small>
+Our Classes
+</small>
 
-<h2>Programs For Every Stage</h2>
+<h2>
+Programs For Every Stage
+</h2>
 
 <p>
 Academic support designed for different levels and learning needs.
@@ -1300,53 +1401,69 @@ Academic support designed for different levels and learning needs.
 
 <div class="class-grid">
 
+
 <div class="class-card">
 
-<div class="icon">📚</div>
+<div class="icon">
+📚
+</div>
 
 <h3>
 Nursery – Class X
 </h3>
 
 <p>
+
 All subjects with focus on concepts, fundamentals,
 regular learning and academic development.
+
 </p>
 
 </div>
 
 
+
 <div class="class-card">
 
-<div class="icon">📐</div>
+<div class="icon">
+📐
+</div>
 
 <h3>
 Class XI & XII
 </h3>
 
 <p>
+
 Specialized tuition for
 <strong>Mathematics and Physics</strong>
 for senior secondary students.
+
 </p>
 
 </div>
 
 
+
 <div class="class-card">
 
-<div class="icon">💻</div>
+<div class="icon">
+💻
+</div>
 
 <h3>
 Special Computer Classes
 </h3>
 
 <p>
+
 Computer classes designed to help students develop
 useful computer knowledge and skills.
+
 </p>
 
 </div>
+
 
 </div>
 
@@ -1355,7 +1472,10 @@ useful computer knowledge and skills.
 </section>
 
 
-<!-- ================= BOARDS ================= -->
+
+<!-- =========================
+     BOARDS
+========================= -->
 
 <section class="boards">
 
@@ -1363,9 +1483,13 @@ useful computer knowledge and skills.
 
 <div class="section-title">
 
-<small>Boards</small>
+<small>
+Boards
+</small>
 
-<h2>Tuition For Multiple Boards</h2>
+<h2>
+Tuition For Multiple Boards
+</h2>
 
 <p>
 Classes available for students from different educational boards.
@@ -1376,11 +1500,25 @@ Classes available for students from different educational boards.
 
 <div class="board-list">
 
-<div class="board">ICSE</div>
-<div class="board">CBSE</div>
-<div class="board">JAC</div>
-<div class="board">NIOS</div>
-<div class="board">Others</div>
+<div class="board">
+ICSE
+</div>
+
+<div class="board">
+CBSE
+</div>
+
+<div class="board">
+JAC
+</div>
+
+<div class="board">
+NIOS
+</div>
+
+<div class="board">
+Others
+</div>
 
 </div>
 
@@ -1389,7 +1527,10 @@ Classes available for students from different educational boards.
 </section>
 
 
-<!-- ================= BRANCHES ================= -->
+
+<!-- =========================
+     BRANCHES
+========================= -->
 
 <section class="branch-section" id="branches">
 
@@ -1397,9 +1538,13 @@ Classes available for students from different educational boards.
 
 <div class="section-title">
 
-<small>Our Locations</small>
+<small>
+Our Locations
+</small>
 
-<h2>Visit Our Branches</h2>
+<h2>
+Visit Our Branches
+</h2>
 
 <p>
 Learning locations in Mango, Jamshedpur.
@@ -1447,6 +1592,7 @@ class="btn map">
 </a>
 
 </div>
+
 
 
 <div class="branch">
@@ -1504,7 +1650,10 @@ class="btn map">
 </section>
 
 
-<!-- ================= WHY ================= -->
+
+<!-- =========================
+     WHY CLASSWORK CENTRE
+========================= -->
 
 <section class="why">
 
@@ -1512,7 +1661,9 @@ class="btn map">
 
 <div class="section-title">
 
-<small>Why Classwork Centre</small>
+<small>
+Why Classwork Centre
+</small>
 
 <h2>
 A Place To Learn & Grow
@@ -1545,6 +1696,7 @@ Build clear concepts from the basics.
 </div>
 
 
+
 <div class="why-card">
 
 <div class="icon">
@@ -1562,6 +1714,7 @@ Structured support for students.
 </div>
 
 
+
 <div class="why-card">
 
 <div class="icon">
@@ -1577,6 +1730,7 @@ Focus on understanding, not memorising.
 </p>
 
 </div>
+
 
 
 <div class="why-card">
@@ -1603,7 +1757,10 @@ Learning with growth and development.
 </section>
 
 
-<!-- ================= SOCIAL ================= -->
+
+<!-- =========================
+     SOCIAL
+========================= -->
 
 <section>
 
@@ -1611,7 +1768,9 @@ Learning with growth and development.
 
 <div class="section-title">
 
-<small>Stay Connected</small>
+<small>
+Stay Connected
+</small>
 
 <h2>
 Follow Classwork Centre
@@ -1634,8 +1793,10 @@ Stay updated with Classwork Centre activities and educational content.
 </h3>
 
 <p>
+
 Follow <strong>@classwork_centre</strong>
 for updates and centre activities.
+
 </p>
 
 <a
@@ -1650,6 +1811,7 @@ Follow on Instagram →
 </div>
 
 
+
 <div class="social-card youtube">
 
 <h3>
@@ -1657,8 +1819,10 @@ Follow on Instagram →
 </h3>
 
 <p>
+
 Visit the Classwork Centre YouTube channel
 for educational content.
+
 </p>
 
 <a
@@ -1680,7 +1844,10 @@ Visit YouTube →
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact" id="contact">
 
@@ -1688,7 +1855,9 @@ Visit YouTube →
 
 <div class="section-title">
 
-<small>Get In Touch</small>
+<small>
+Get In Touch
+</small>
 
 <h2>
 Contact Classwork Centre
@@ -1775,6 +1944,7 @@ class="btn whatsapp">
 </div>
 
 
+
 <div class="contact-card">
 
 <h3 style="color:#071a3d;margin-bottom:20px;">
@@ -1816,7 +1986,10 @@ class="btn map">
 </section>
 
 
-<!-- ================= CTA ================= -->
+
+<!-- =========================
+     CTA
+========================= -->
 
 <section class="cta">
 
@@ -1831,7 +2004,9 @@ Connect with Classwork Centre for tuition and academic support.
 </p>
 
 
-<div class="buttons" style="justify-content:center;">
+<div
+class="buttons"
+style="justify-content:center;">
 
 <a
 href="tel:+918092187022"
@@ -1858,7 +2033,10 @@ class="btn secondary">
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1888,6 +2066,7 @@ Mango, Jamshedpur, Jharkhand
 </div>
 
 
+
 <div class="footer-links">
 
 <h3>
@@ -1915,6 +2094,7 @@ Contact
 </a>
 
 </div>
+
 
 
 <div class="footer-links">
@@ -1958,6 +2138,7 @@ YouTube
 </div>
 
 </footer>
+
 
 </body>
 </html>
