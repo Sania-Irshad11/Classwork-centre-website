@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,9 +35,7 @@ a{
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
     position:sticky;
@@ -104,9 +101,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
     background:
@@ -212,9 +207,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   MAIN LOGO CIRCLE
-========================= */
+/* MAIN LOGO CIRCLE */
 
 .logo-circle{
     width:240px !important;
@@ -240,9 +233,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section{
     padding:80px 0;
@@ -272,9 +263,7 @@ section{
 }
 
 
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about{
     background:#f5f8fc;
@@ -341,9 +330,7 @@ section{
 }
 
 
-/* =========================
-   CLASSES
-========================= */
+/* CLASSES */
 
 .class-grid{
     display:grid;
@@ -353,79 +340,20 @@ section{
 
 .class-card{
     position:relative;
-    overflow:hidden;
-    isolation:isolate;
     padding:30px;
     border-radius:20px;
     border:1px solid #dce8f7;
-    box-shadow:
-        0 10px 30px rgba(21,87,156,.08),
-        0 0 0 rgba(47,128,237,0);
-    transition:.35s ease;
+    box-shadow:0 10px 30px rgba(21,87,156,.08);
+    transition:.3s ease;
     background:#fff;
 }
 
-.class-card::before{
-    content:"";
-    position:absolute;
-    width:140px;
-    height:140px;
-    top:-70px;
-    right:-70px;
-    background:rgba(77,163,255,.18);
-    border-radius:50%;
-    filter:blur(5px);
-    transition:.5s ease;
-    z-index:-1;
-}
-
-.class-card::after{
-    content:"";
-    position:absolute;
-    left:15%;
-    right:15%;
-    bottom:0;
-    height:2px;
-    background:linear-gradient(
-        90deg,
-        transparent,
-        #4da3ff,
-        #f5c842,
-        #4da3ff,
-        transparent
-    );
-    opacity:0;
-    box-shadow:0 0 12px rgba(77,163,255,.8);
-    transition:.4s ease;
-}
-
 .class-card:hover{
-    transform:translateY(-9px);
+    transform:translateY(-8px);
     border-color:#4da3ff;
     box-shadow:
-        0 18px 40px rgba(21,87,156,.16),
-        0 0 25px rgba(77,163,255,.25);
-}
-
-.class-card:hover::before{
-    width:230px;
-    height:230px;
-    background:rgba(77,163,255,.25);
-}
-
-.class-card:hover::after{
-    opacity:1;
-}
-
-.class-card .icon{
-    transition:.4s ease;
-}
-
-.class-card:hover .icon{
-    transform:scale(1.08) rotate(-3deg);
-    box-shadow:
-        0 0 12px rgba(77,163,255,.35),
-        0 0 25px rgba(77,163,255,.18);
+        0 15px 35px rgba(21,87,156,.15),
+        0 0 20px rgba(77,163,255,.25);
 }
 
 .icon{
@@ -438,6 +366,12 @@ section{
     font-size:27px;
     margin-bottom:18px;
     box-shadow:0 0 15px rgba(47,128,237,.20);
+    transition:.3s ease;
+}
+
+.class-card:hover .icon{
+    transform:scale(1.08);
+    box-shadow:0 0 15px rgba(77,163,255,.35);
 }
 
 .class-card h3{
@@ -450,9 +384,7 @@ section{
 }
 
 
-/* =========================
-   BOARDS
-========================= */
+/* BOARDS */
 
 .boards{
     background:linear-gradient(135deg,#071a3d,#123f8f);
@@ -487,9 +419,7 @@ section{
 }
 
 
-/* =========================
-   BRANCHES
-========================= */
+/* BRANCHES */
 
 .branch-section{
     background:#fff;
@@ -535,75 +465,11 @@ section{
 }
 
 
-/* =========================
-   WHY
-========================= */
+/* WHY */
 
 .why{
-    position:relative;
-    overflow:hidden;
     background:#f5f8fc;
 }
-
-.why::before{
-    content:"";
-    position:absolute;
-    width:300px;
-    height:300px;
-    top:-150px;
-    left:-120px;
-    background:rgba(77,163,255,.10);
-    border-radius:50%;
-    filter:blur(35px);
-    animation:softFloat 6s ease-in-out infinite;
-}
-
-.why::after{
-    content:"";
-    position:absolute;
-    width:260px;
-    height:260px;
-    bottom:-140px;
-    right:-100px;
-    background:rgba(245,200,66,.10);
-    border-radius:50%;
-    filter:blur(35px);
-    animation:softFloat 7s ease-in-out infinite reverse;
-}
-
-.why .container{
-    position:relative;
-    z-index:1;
-}
-
-.why .section-title small{
-    position:relative;
-    display:inline-block;
-}
-
-.why .section-title small::after{
-    content:"";
-    position:absolute;
-    width:35px;
-    height:2px;
-    right:-48px;
-    top:50%;
-    background:#f5c842;
-    box-shadow:0 0 8px rgba(245,200,66,.7);
-}
-
-.why .section-title h2{
-    transition:.3s ease;
-}
-
-.why .section-title h2:hover{
-    text-shadow:
-        0 0 10px rgba(21,87,156,.18),
-        0 0 25px rgba(77,163,255,.12);
-}
-
-
-/* WHY CARDS */
 
 .why-grid{
     display:grid;
@@ -613,44 +479,13 @@ section{
 
 .why-card{
     position:relative;
-    overflow:hidden;
     background:white;
     padding:25px 18px;
     text-align:center;
     border-radius:18px;
     border:1px solid transparent;
     box-shadow:0 10px 30px rgba(7,26,61,.07);
-    transition:.35s ease;
-}
-
-.why-card::before{
-    content:"";
-    position:absolute;
-    width:100px;
-    height:100px;
-    top:-50px;
-    right:-50px;
-    border-radius:50%;
-    background:rgba(77,163,255,.12);
-    filter:blur(4px);
-    transition:.4s ease;
-}
-
-.why-card::after{
-    content:"";
-    position:absolute;
-    bottom:0;
-    left:50%;
-    width:0;
-    height:2px;
-    background:linear-gradient(
-        90deg,
-        #4da3ff,
-        #f5c842
-    );
-    box-shadow:0 0 12px rgba(77,163,255,.65);
-    transform:translateX(-50%);
-    transition:.4s ease;
+    transition:.3s ease;
 }
 
 .why-card:hover{
@@ -658,29 +493,16 @@ section{
     border-color:#b9dcff;
     box-shadow:
         0 15px 35px rgba(7,26,61,.10),
-        0 0 22px rgba(77,163,255,.20);
-}
-
-.why-card:hover::before{
-    width:170px;
-    height:170px;
-    background:rgba(77,163,255,.18);
-}
-
-.why-card:hover::after{
-    width:55%;
+        0 0 20px rgba(77,163,255,.20);
 }
 
 .why-card .icon{
     margin:0 auto 15px;
-    transition:.4s ease;
 }
 
 .why-card:hover .icon{
-    transform:translateY(-4px) scale(1.08);
-    box-shadow:
-        0 0 15px rgba(77,163,255,.35),
-        0 0 28px rgba(77,163,255,.15);
+    transform:scale(1.08);
+    box-shadow:0 0 15px rgba(77,163,255,.35);
 }
 
 .why-card h3{
@@ -695,24 +517,7 @@ section{
 }
 
 
-/* SOFT BACKGROUND ANIMATION */
-
-@keyframes softFloat{
-
-    0%,100%{
-        transform:translate(0,0);
-    }
-
-    50%{
-        transform:translate(18px,15px);
-    }
-
-}
-
-
-/* =========================
-   SOCIAL
-========================= */
+/* SOCIAL */
 
 .social-grid{
     display:grid;
@@ -753,9 +558,7 @@ section{
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact{
     background:#f5f8fc;
@@ -805,9 +608,7 @@ section{
 }
 
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta{
     padding:70px 0;
@@ -827,9 +628,7 @@ section{
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
     background:#06142f;
@@ -852,8 +651,6 @@ footer p{
     font-size:14px;
     margin-bottom:7px;
 }
-
-/* Director name in footer */
 
 footer .footer-grid > div:first-child p:nth-of-type(2){
     color:#f5c842;
@@ -879,9 +676,7 @@ footer .footer-grid > div:first-child p:nth-of-type(2){
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:850px){
 
@@ -996,15 +791,6 @@ footer .footer-grid > div:first-child p:nth-of-type(2){
         height:190px !important;
     }
 
-    .why .section-title small::after{
-        display:none;
-    }
-
-    .class-card::after,
-    .why-card::after{
-        display:none;
-    }
-
 }
 
 </style>
@@ -1012,10 +798,6 @@ footer .footer-grid > div:first-child p:nth-of-type(2){
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
@@ -1026,26 +808,18 @@ footer .footer-grid > div:first-child p:nth-of-type(2){
 <img src="logo.png" alt="Classwork Centre Logo">
 
 <div>
-
 <h3>CLASSWORK CENTRE</h3>
-
 <span>Education • Growth • Development</span>
-
 </div>
 
 </a>
 
-
 <nav>
 
 <a href="#home">Home</a>
-
 <a href="#about">About</a>
-
 <a href="#classes">Classes</a>
-
 <a href="#branches">Branches</a>
-
 <a href="#contact">Contact</a>
 
 <a href="tel:+918092187022" class="nav-btn">
@@ -1058,10 +832,6 @@ Call Now
 
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
 
 <section class="hero" id="home">
 
@@ -1132,10 +902,6 @@ Explore Classes →
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
-
 <section class="about" id="about">
 
 <div class="container">
@@ -1151,7 +917,6 @@ To integrate life and education for development.
 </p>
 
 </div>
-
 
 <div class="about-card">
 
@@ -1171,7 +936,6 @@ for students across different boards and academic levels.
 The centre focuses on strong fundamentals, clear concepts,
 better understanding and continuous development.
 </p>
-
 
 <div class="instructor-box">
 
@@ -1196,10 +960,6 @@ Classwork Centre
 </section>
 
 
-<!-- =========================
-     CLASSES
-========================= -->
-
 <section id="classes">
 
 <div class="container">
@@ -1216,9 +976,7 @@ Academic support designed for different levels and learning needs.
 
 </div>
 
-
 <div class="class-grid">
-
 
 <div class="class-card">
 
@@ -1262,17 +1020,12 @@ useful computer knowledge and skills.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
-<!-- =========================
-     BOARDS
-========================= -->
 
 <section class="boards">
 
@@ -1290,17 +1043,12 @@ Classes available for students from different educational boards.
 
 </div>
 
-
 <div class="board-list">
 
 <div class="board">ICSE</div>
-
 <div class="board">CBSE</div>
-
 <div class="board">JAC</div>
-
 <div class="board">NIOS</div>
-
 <div class="board">Others</div>
 
 </div>
@@ -1309,10 +1057,6 @@ Classes available for students from different educational boards.
 
 </section>
 
-
-<!-- =========================
-     BRANCHES
-========================= -->
 
 <section class="branch-section" id="branches">
 
@@ -1330,9 +1074,7 @@ Learning locations in Mango, Jamshedpur.
 
 </div>
 
-
 <div class="branch-grid">
-
 
 <div class="branch">
 
@@ -1400,17 +1142,12 @@ class="btn map">
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
-<!-- =========================
-     WHY
-========================= -->
 
 <section class="why">
 
@@ -1428,9 +1165,7 @@ Our focus goes beyond completing the syllabus.
 
 </div>
 
-
 <div class="why-grid">
-
 
 <div class="why-card">
 
@@ -1483,17 +1218,12 @@ Learning with growth and development.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
-<!-- =========================
-     SOCIAL
-========================= -->
 
 <section>
 
@@ -1511,9 +1241,7 @@ Stay updated with Classwork Centre activities and educational content.
 
 </div>
 
-
 <div class="social-grid">
-
 
 <div class="social-card instagram">
 
@@ -1556,17 +1284,12 @@ Visit YouTube →
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
-<!-- =========================
-     CONTACT
-========================= -->
 
 <section class="contact" id="contact">
 
@@ -1584,16 +1307,13 @@ Have a question about classes? Get in touch with us.
 
 </div>
 
-
 <div class="contact-grid">
-
 
 <div class="contact-card">
 
 <h3 style="color:#071a3d;margin-bottom:20px;">
 📞 Contact Information
 </h3>
-
 
 <div class="contact-item">
 
@@ -1636,7 +1356,6 @@ class="btn call">
 📞 Call Now
 
 </a>
-
 
 <a
 href="https://wa.me/918092187022"
@@ -1683,17 +1402,12 @@ class="btn map">
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
-<!-- =========================
-     CTA
-========================= -->
 
 <section class="cta">
 
@@ -1707,9 +1421,7 @@ Ready To Begin Your Learning Journey?
 Connect with Classwork Centre for tuition and academic support.
 </p>
 
-
 <div class="buttons" style="justify-content:center;">
-
 
 <a
 href="tel:+918092187022"
@@ -1718,7 +1430,6 @@ class="btn primary">
 📞 Call 8092187022
 
 </a>
-
 
 <a
 href="https://wa.me/918092187022"
@@ -1729,7 +1440,6 @@ class="btn secondary">
 
 </a>
 
-
 </div>
 
 </div>
@@ -1737,16 +1447,11 @@ class="btn secondary">
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
 
 <div class="container">
 
 <div class="footer-grid">
-
 
 <div>
 
@@ -1758,7 +1463,7 @@ CLASSWORK CENTRE
 “To integrate life and education for development.”
 </p>
 
-<p>
+<p style="color:#f5c842;font-weight:bold;">
 Tauqeer Alam Ansari
 </p>
 
@@ -1776,13 +1481,9 @@ Quick Links
 </h3>
 
 <a href="#home">Home</a>
-
 <a href="#about">About</a>
-
 <a href="#classes">Classes</a>
-
 <a href="#branches">Branches</a>
-
 <a href="#contact">Contact</a>
 
 </div>
@@ -1812,7 +1513,6 @@ YouTube
 
 </div>
 
-
 </div>
 
 
@@ -1829,4 +1529,3 @@ YouTube
 
 </body>
 </html>
-```
