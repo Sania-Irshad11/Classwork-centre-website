@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
 
 <meta name="description" content="Classwork Centre, Mango, Jamshedpur — tuition classes for all boards, Nursery to Class X all subjects, XI & XII Maths and Physics, and special computer classes.">
 
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="only light">
 
 <title>Classwork Centre | Jamshedpur</title>
 
@@ -17,6 +17,11 @@
    RESET
 ========================= */
 
+:root {
+    color-scheme: only light;
+    background-color: #ffffff;
+}
+
 *{
     margin:0;
     padding:0;
@@ -25,15 +30,16 @@
 }
 
 html{
-    color-scheme:light !important;
+    color-scheme:only light !important;
+    background-color:#ffffff !important;
 }
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    color:#17213a;
+    color:#17213a !important;
     line-height:1.6;
-    background:#fff !important;
-    color-scheme:light !important;
+    background:#ffffff !important;
+    color-scheme:only light !important;
 }
 
 a{
@@ -1092,15 +1098,14 @@ footer p{
 
 @media (prefers-color-scheme: dark){
 
-    html{
-        background:#fff !important;
-        color-scheme:light !important;
+    html,
+    body{
+        background-color:#ffffff !important;
+        color-scheme:only light !important;
     }
 
     body{
-        background:#fff !important;
         color:#17213a !important;
-        color-scheme:light !important;
     }
 
     .about,
@@ -1140,9 +1145,6 @@ footer p{
         color:#667085 !important;
     }
 
-    /* Dark blue sections stay dark,
-       but their headings remain white */
-
     .hero,
     .boards,
     .cta,
@@ -1174,7 +1176,6 @@ footer p{
 </style>
 </head>
 
-
 <body>
 
 
@@ -1197,7 +1198,6 @@ footer p{
 
 </a>
 
-
 <nav>
 
 <a href="#home">Home</a>
@@ -1215,7 +1215,6 @@ Call Now
 </div>
 
 </header>
-
 
 
 <!-- =========================
@@ -1298,7 +1297,6 @@ alt="Classwork Centre Logo">
 </section>
 
 
-
 <!-- =========================
      ABOUT
 ========================= -->
@@ -1373,7 +1371,6 @@ Classwork Centre
 </section>
 
 
-
 <!-- =========================
      CLASSES
 ========================= -->
@@ -1422,7 +1419,6 @@ regular learning and academic development.
 </div>
 
 
-
 <div class="class-card">
 
 <div class="icon">
@@ -1444,7 +1440,6 @@ for senior secondary students.
 </div>
 
 
-
 <div class="class-card">
 
 <div class="icon">
@@ -1463,22 +1458,22 @@ useful computer knowledge and skills.
 </p>
 
 </div>
+
+
 <div class="class-card">
 
-
 <div class="icon">
-    🗣️
+🗣️
 </div>
 
 <h3>
-    Spoken English Classes
+Spoken English Classes
 </h3>
 
 <p>
-    Improve your speaking skills, pronunciation, vocabulary
-    and everyday communication. 
+Improve your speaking skills, pronunciation, vocabulary
+and everyday communication.
 </p>
-
 
 </div>
 
@@ -1488,7 +1483,6 @@ useful computer knowledge and skills.
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1543,7 +1537,6 @@ Others
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1612,7 +1605,6 @@ class="btn map">
 </div>
 
 
-
 <div class="branch">
 
 <div class="branch-number">
@@ -1668,7 +1660,6 @@ class="btn map">
 </section>
 
 
-
 <!-- =========================
      WHY CLASSWORK CENTRE
 ========================= -->
@@ -1714,7 +1705,6 @@ Build clear concepts from the basics.
 </div>
 
 
-
 <div class="why-card">
 
 <div class="icon">
@@ -1732,7 +1722,6 @@ Structured support for students.
 </div>
 
 
-
 <div class="why-card">
 
 <div class="icon">
@@ -1748,7 +1737,6 @@ Focus on understanding, not memorising.
 </p>
 
 </div>
-
 
 
 <div class="why-card">
@@ -1773,7 +1761,6 @@ Learning with growth and development.
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1829,7 +1816,6 @@ Follow on Instagram →
 </div>
 
 
-
 <div class="social-card youtube">
 
 <h3>
@@ -1860,7 +1846,6 @@ Visit YouTube →
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1962,7 +1947,6 @@ class="btn whatsapp">
 </div>
 
 
-
 <div class="contact-card">
 
 <h3 style="color:#071a3d;margin-bottom:20px;">
@@ -2002,7 +1986,6 @@ class="btn map">
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -2051,7 +2034,6 @@ class="btn secondary">
 </section>
 
 
-
 <!-- =========================
      FOOTER
 ========================= -->
@@ -2084,7 +2066,6 @@ Mango, Jamshedpur, Jharkhand
 </div>
 
 
-
 <div class="footer-links">
 
 <h3>
@@ -2112,7 +2093,6 @@ Contact
 </a>
 
 </div>
-
 
 
 <div class="footer-links">
